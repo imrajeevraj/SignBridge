@@ -41,6 +41,20 @@ def default_trusted_hosts() -> tuple[str, ...]:
     return tuple(sorted(hosts))
 
 
+def model_source() -> str:
+    explicit = os.environ.get("SIGNBRIDGE_MODEL_SOURCE")
+    if explicit:
+        return explicit.strip().lower()
+    if os.environ.get("HF_MODEL_REPO_ID"):
+        return "huggingface"
+    return "local"
+
+
+def auto_load_model() -> bool:
+    val = os.environ.get("SIGNBRIDGE_AUTO_LOAD_MODEL", "true").strip().lower()
+    return val in ("true", "1", "yes")
+
+
 @dataclass(frozen=True)
 class Settings:
     service_name: str = "SignBridge AI Backend"
@@ -48,6 +62,11 @@ class Settings:
     port: int = local_port()
     allowed_origins: tuple[str, ...] = default_allowed_origins()
     trusted_hosts: tuple[str, ...] = default_trusted_hosts()
+    model_source: str = model_source()
+    hf_model_repo_id: str = os.environ.get("HF_MODEL_REPO_ID", "").strip()
+    hf_model_revision: str = os.environ.get("HF_MODEL_REVISION", "").strip()
+    hf_token: str = os.environ.get("HF_TOKEN", "").strip()
+    auto_load_model: bool = auto_load_model()
 
 
 settings = Settings()

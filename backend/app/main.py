@@ -17,6 +17,8 @@ from .inference.websocket import inference_socket
 def resolve_model_dir() -> Path | None:
     raw = os.getenv('SIGNBRIDGE_MODEL_DIR')
     if not raw:
+        if os.getenv('SIGNBRIDGE_MODEL_SOURCE') == 'huggingface' or os.getenv('HF_MODEL_REPO_ID'):
+            return Path('/tmp/signbridge/models/isl500-v2-remediated')
         return None
     path = Path(raw)
     if path.is_dir():
@@ -39,7 +41,15 @@ def create_app(*, registry: ModelRegistry | None = None, token: str | None = Non
         application.state.inference_token = token or local_token()
         application.state.inference_origins = origins if origins is not None else permitted_origins()
         application.state.inference_connections = 0
-        loading = asyncio.create_task(asyncio.to_thread(selected.load))
+
+        if registry is not None:
+            loading = asyncio.create_task(asyncio.to_thread(selected.load))
+        elif settings.model_source == "huggingface" and settings.auto_load_model:
+            from .inference.model_provisioning import provision_and_load
+            loading = asyncio.create_task(asyncio.to_thread(provision_and_load, selected))
+        else:
+            loading = asyncio.create_task(asyncio.to_thread(selected.load))
+
         try:
             yield
         finally:

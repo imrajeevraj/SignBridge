@@ -2,8 +2,8 @@
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/imrajeevraj/SignBridge)
 
-**Live Web Preview:** [https://signbridge-2mpr.onrender.com](https://signbridge-2mpr.onrender.com)  
-**Render Deployment Guide:** [docs/RENDER_DEPLOYMENT.md](docs/RENDER_DEPLOYMENT.md) | **Verification Report:** [docs/RENDER_DEPLOYMENT_VERIFICATION.md](docs/RENDER_DEPLOYMENT_VERIFICATION.md)
+**Live Web Preview:** [https://signbridge-web.onrender.com](https://signbridge-web.onrender.com) | **Backend:** [https://signbridge-api-mjbw.onrender.com](https://signbridge-api-mjbw.onrender.com)  
+**Deployment Guides:** [Render Deployment](docs/RENDER_DEPLOYMENT.md) | [Hugging Face Model Provisioning](docs/HUGGINGFACE_MODEL_DEPLOYMENT.md) | [Verification Report](docs/RENDER_DEPLOYMENT_VERIFICATION.md)
 
 A local accessibility prototype with a Chrome MV3 extension, React webcam studio
 and FastAPI backend. **Phase 3 is PARTIAL:** a genuine two-class ISL GRU is now
