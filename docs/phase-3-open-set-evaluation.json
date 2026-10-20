@@ -1,0 +1,114 @@
+{
+  "known_dataset_sha256": "d7af42594a48ef8d32f04ad7332277eb8a3144b3de35e9722f988d319f5f5048",
+  "unknown_dataset_sha256": "e65f973e1ffa41b23d5b588ebbb65b3c45e530299918a77cab668a7176948bcc",
+  "checkpoint_sha256": "b657712b1c7f5a6ae8107f33e7a74ac535ee100817518494e1495bbfc17ab031",
+  "threshold": 0.5,
+  "studio_default_threshold": 0.8,
+  "studio_scope": "Per-window threshold only; does not simulate stability/cooldown or claim physical-camera false-positive rate.",
+  "scope": "Unsupported ISL glosses; correlated windows. Threshold frozen from closed-set validation. Not an all-unknown guarantee.",
+  "neutral_behavior": "No genuine neutral activity corpus; absent-hand protocol tests are separate.",
+  "splits": {
+    "validation": {
+      "clips": 2,
+      "windows": 6,
+      "accepted_windows": 6,
+      "window_false_acceptance_rate": 1.0,
+      "studio_default_window_false_acceptance_rate": 1.0,
+      "clip_any_false_acceptance_rate": 1.0,
+      "observations": [
+        {
+          "id": "User010-Goodevening",
+          "source_gloss": "Goodevening",
+          "signer_id": "User010",
+          "windows": 3,
+          "accepted_windows": 3,
+          "studio_default_accepted_windows": 3,
+          "confidences": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "predicted_labels": [
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon"
+          ]
+        },
+        {
+          "id": "User010-Goodnight",
+          "source_gloss": "Goodnight",
+          "signer_id": "User010",
+          "windows": 3,
+          "accepted_windows": 3,
+          "studio_default_accepted_windows": 3,
+          "confidences": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "predicted_labels": [
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon"
+          ]
+        }
+      ]
+    },
+    "test": {
+      "clips": 2,
+      "windows": 11,
+      "accepted_windows": 11,
+      "window_false_acceptance_rate": 1.0,
+      "studio_default_window_false_acceptance_rate": 1.0,
+      "clip_any_false_acceptance_rate": 1.0,
+      "observations": [
+        {
+          "id": "User013-Goodevening",
+          "source_gloss": "Goodevening",
+          "signer_id": "User013",
+          "windows": 4,
+          "accepted_windows": 4,
+          "studio_default_accepted_windows": 4,
+          "confidences": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "predicted_labels": [
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon"
+          ]
+        },
+        {
+          "id": "User013-Goodnight",
+          "source_gloss": "Goodnight",
+          "signer_id": "User013",
+          "windows": 7,
+          "accepted_windows": 7,
+          "studio_default_accepted_windows": 7,
+          "confidences": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9999300241470337,
+            0.9999966621398926,
+            1.0
+          ],
+          "predicted_labels": [
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon",
+            "Goodafternoon",
+            "Family",
+            "Family"
+          ]
+        }
+      ]
+    }
+  }
+}

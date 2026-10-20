@@ -1,0 +1,77 @@
+{
+  "kind": "Genuine held-out features, ASGI WebSocket serving parity",
+  "checkpoint_sha256": "b657712b1c7f5a6ae8107f33e7a74ac535ee100817518494e1495bbfc17ab031",
+  "dataset_sha256": "d7af42594a48ef8d32f04ad7332277eb8a3144b3de35e9722f988d319f5f5048",
+  "observations": [
+    {
+      "clip_id": "User013-Family",
+      "source_gloss": "Family",
+      "response": {
+        "type": "prediction",
+        "protocol": "signbridge.inference.v1",
+        "request_id": "real-clip",
+        "sequence_id": 1,
+        "model_id": "signbridge-custom-gru",
+        "label": "Family",
+        "confidence": 1.0,
+        "accepted": true,
+        "reason": "ACCEPTED",
+        "latency_ms": 18.06509998277761,
+        "captured_at_ms": 1792452069614.953
+      }
+    },
+    {
+      "clip_id": "User013-Goodafternoon",
+      "source_gloss": "Goodafternoon",
+      "response": {
+        "type": "prediction",
+        "protocol": "signbridge.inference.v1",
+        "request_id": "real-clip",
+        "sequence_id": 1,
+        "model_id": "signbridge-custom-gru",
+        "label": "Goodafternoon",
+        "confidence": 1.0,
+        "accepted": true,
+        "reason": "ACCEPTED",
+        "latency_ms": 3.0088000057730824,
+        "captured_at_ms": 1792452069644.9507
+      }
+    },
+    {
+      "clip_id": "User015-Family",
+      "source_gloss": "Family",
+      "response": {
+        "type": "prediction",
+        "protocol": "signbridge.inference.v1",
+        "request_id": "real-clip",
+        "sequence_id": 1,
+        "model_id": "signbridge-custom-gru",
+        "label": "Family",
+        "confidence": 1.0,
+        "accepted": true,
+        "reason": "ACCEPTED",
+        "latency_ms": 2.9571999912150204,
+        "captured_at_ms": 1792452069659.9502
+      }
+    },
+    {
+      "clip_id": "User015-Goodafternoon",
+      "source_gloss": "Goodafternoon",
+      "response": {
+        "type": "prediction",
+        "protocol": "signbridge.inference.v1",
+        "request_id": "real-clip",
+        "sequence_id": 1,
+        "model_id": "signbridge-custom-gru",
+        "label": "Goodafternoon",
+        "confidence": 1.0,
+        "accepted": true,
+        "reason": "ACCEPTED",
+        "latency_ms": 2.942800027085468,
+        "captured_at_ms": 1792452069675.9502
+      }
+    }
+  ],
+  "no_hands_suppressed": true,
+  "passed": true
+}

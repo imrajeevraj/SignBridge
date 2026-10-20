@@ -1,0 +1,86 @@
+{
+  "purpose": "real_labeled_data",
+  "dataset_id": "ISL500-goodmorning-train",
+  "language": "ISL",
+  "source": "https://huggingface.co/datasets/ISL500/ISL-DATA/tree/bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "license": "Research and academic use only; dataset card; no commercial permission",
+  "labels": [
+    "Goodmorning"
+  ],
+  "feature_schema": "signbridge.custom-gru.v2",
+  "sampling_hz": 30,
+  "samples": [
+    {
+      "id": "User002-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User002",
+      "duplicate_group": "Videos/User002/Goodmorning__session163__clip002.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User002-Goodmorning.mp4",
+      "source_sha256": "6942e3f07845a47301399c8536d660209a8dcb65b8da0d69f28c47484452317d"
+    },
+    {
+      "id": "User003-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User003",
+      "duplicate_group": "Videos/User003/Goodmorning__session10__clip010.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User003-Goodmorning.mp4",
+      "source_sha256": "0b4f3f9ae7dbac8f328ab377b6f42d92964a94faaf37367ed9f519c30bfc92f8"
+    },
+    {
+      "id": "User004-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User004",
+      "duplicate_group": "Videos/User004/Goodmorning__session102__clip022.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User004-Goodmorning.mp4",
+      "source_sha256": "3ee4cb73779233dbba25a7af5aa1b6ced146be8face267ab8d9af316715b42cb"
+    },
+    {
+      "id": "User005-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User005",
+      "duplicate_group": "Videos/User005/Goodmorning__session166__clip004.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User005-Goodmorning.mp4",
+      "source_sha256": "82b6be5aa84ef8e4a337279eb31b9e54af3341f0fd0cac1a1644c48da6e952e6"
+    },
+    {
+      "id": "User006-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User006",
+      "duplicate_group": "Videos/User006/Goodmorning__session142__clip032.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User006-Goodmorning.mp4",
+      "source_sha256": "99d194f2808882a3beee31f62469b630367555e31f9bd26c157a659ca88f4f44"
+    },
+    {
+      "id": "User007-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User007",
+      "duplicate_group": "Videos/User007/Goodmorning__000001__c545daf6-s109-005_Goodmorning.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User007-Goodmorning.mp4",
+      "source_sha256": "b84f09067f7aca9bf68235b414d10582095ebe08fe44f18925fd2e9a35f00574"
+    },
+    {
+      "id": "User008-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User008",
+      "duplicate_group": "Videos/User008/Goodmorning__session102__clip026.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User008-Goodmorning.mp4",
+      "source_sha256": "d7845db6c40938881b766241227e66bec7bad5f356592820fe1e78f6ac84e26a"
+    },
+    {
+      "id": "User009-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User009",
+      "duplicate_group": "Videos/User009/Goodmorning__000001.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User009-Goodmorning.mp4",
+      "source_sha256": "f2ab1bb2ab57517ecc677211f1029e88e697a1a0b84e835585f38c1be4262b5a"
+    }
+  ]
+}

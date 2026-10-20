@@ -1,0 +1,1521 @@
+{
+  "date": "2026-10-20",
+  "source_revision": "bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "downloaded_clips": 57,
+  "downloaded_bytes": 1075545904,
+  "all_pinned_source_hashes_verified": true,
+  "known_manifest_sha256": "d7af42594a48ef8d32f04ad7332277eb8a3144b3de35e9722f988d319f5f5048",
+  "known_statistics": {
+    "train": {
+      "clips": 15,
+      "windows": 67,
+      "signers": 8,
+      "classes": {
+        "Family": 8,
+        "Goodafternoon": 7
+      }
+    },
+    "validation": {
+      "clips": 6,
+      "windows": 14,
+      "signers": 3,
+      "classes": {
+        "Family": 3,
+        "Goodafternoon": 3
+      }
+    },
+    "test": {
+      "clips": 4,
+      "windows": 16,
+      "signers": 2,
+      "classes": {
+        "Family": 2,
+        "Goodafternoon": 2
+      }
+    }
+  },
+  "unknown_manifest_sha256": "e65f973e1ffa41b23d5b588ebbb65b3c45e530299918a77cab668a7176948bcc",
+  "unknown_statistics": {
+    "train": {
+      "clips": 0,
+      "windows": 0,
+      "signers": 0,
+      "classes": {
+        "Goodevening": 0,
+        "Goodnight": 0
+      }
+    },
+    "validation": {
+      "clips": 2,
+      "windows": 6,
+      "signers": 1,
+      "classes": {
+        "Goodevening": 1,
+        "Goodnight": 1
+      }
+    },
+    "test": {
+      "clips": 2,
+      "windows": 11,
+      "signers": 1,
+      "classes": {
+        "Goodevening": 1,
+        "Goodnight": 1
+      }
+    }
+  },
+  "known_attrition": {
+    "catalog_clips": 30,
+    "usable_clips": 25,
+    "rejected_or_unprocessed_ids": [
+      "User007-Goodafternoon",
+      "User008-Family",
+      "User008-Goodafternoon",
+      "User014-Family",
+      "User014-Goodafternoon"
+    ]
+  },
+  "unknown_attrition": {
+    "catalog_clips": 12,
+    "usable_clips": 4,
+    "rejected_or_unprocessed_ids": [
+      "User011-Goodevening",
+      "User011-Goodnight",
+      "User012-Goodevening",
+      "User012-Goodnight",
+      "User014-Goodevening",
+      "User014-Goodnight",
+      "User015-Goodevening",
+      "User015-Goodnight"
+    ]
+  },
+  "diagnostics": [
+    {
+      "id": "User001-Family",
+      "source_sha256": "97337f5357dca2738910d3798bbb839ae56c9c301f11c3b122dfef4db8764259",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-0.json",
+      "diagnostic_sha256": "bccf7466b736b6f61f61aedfeba0a6f6ea9b7cd098c9a7af0679c4a1a459c5d4",
+      "video": {
+        "durationSeconds": 11.09,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 328,
+      "skipped_duplicate_pts": 5,
+      "frame_reasons": {
+        "no_hands": 190,
+        "ready": 138
+      },
+      "longest_run": 71,
+      "candidate_outcomes": {
+        "rejected": 222,
+        "emitted": 10,
+        "valid_not_stride_boundary": 65
+      },
+      "emitted_windows": 10,
+      "reset_reasons": {
+        "no_hands": 190
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User001-Goodafternoon",
+      "source_sha256": "2ce4078ccb6aef3e7870f9a20abcdbc388723cc830266c28190c7bcac1f440a6",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-1.json",
+      "diagnostic_sha256": "36b667779d77f312ed02cdee313293977c2c49b074bc4e5bd45db2f3d4330f0d",
+      "video": {
+        "durationSeconds": 5.866,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 173,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 122,
+        "ready": 51
+      },
+      "longest_run": 40,
+      "candidate_outcomes": {
+        "rejected": 133,
+        "emitted": 2,
+        "valid_not_stride_boundary": 7
+      },
+      "emitted_windows": 2,
+      "reset_reasons": {
+        "no_hands": 122
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User001-Goodmorning",
+      "source_sha256": "98bc5adc2bbb74e3ec58eb1172a2555c9efa3e9c079b1e4d36d53012f6a6f36a",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-2.json",
+      "diagnostic_sha256": "83a8df0b89b5c5c4fc02d3c8d8d225fa2d7577cf146a4c60bd33b7ffa8f030ed",
+      "video": {
+        "durationSeconds": 5.904,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 174,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 128,
+        "ready": 46
+      },
+      "longest_run": 31,
+      "candidate_outcomes": {
+        "rejected": 143
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 128
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User002-Family",
+      "source_sha256": "f9a94e49e1a5e2255d2b789c8028f1407da3cf6e13993c0731b705c289865981",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-3.json",
+      "diagnostic_sha256": "18570fa9fb37b7e5885037150d786a7f3ce1ab3c77e1207c83c015acc5f628f5",
+      "video": {
+        "durationSeconds": 7.702,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 228,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 109,
+        "ready": 119
+      },
+      "longest_run": 62,
+      "candidate_outcomes": {
+        "rejected": 140,
+        "emitted": 8,
+        "valid_not_stride_boundary": 49
+      },
+      "emitted_windows": 8,
+      "reset_reasons": {
+        "no_hands": 109
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User002-Goodafternoon",
+      "source_sha256": "46c51e5131489b9a1f6fb76e409fddeb275279e682fcf7cc9513ce8d473cec9d",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-4.json",
+      "diagnostic_sha256": "f9d841da52b41309773e7e474838a4388f3f98640d59f473536dcd111a0af58f",
+      "video": {
+        "durationSeconds": 4.033,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 119,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 64,
+        "ready": 55
+      },
+      "longest_run": 55,
+      "candidate_outcomes": {
+        "rejected": 64,
+        "emitted": 3,
+        "valid_not_stride_boundary": 21
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 64
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User002-Goodmorning",
+      "source_sha256": "6942e3f07845a47301399c8536d660209a8dcb65b8da0d69f28c47484452317d",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-5.json",
+      "diagnostic_sha256": "50ab79187199c70a3372abbbd822ed63db366a7cb409d90fcccc613d6b546c3f",
+      "video": {
+        "durationSeconds": 2.693,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 79,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 42,
+        "ready": 37
+      },
+      "longest_run": 20,
+      "candidate_outcomes": {
+        "rejected": 48
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 42
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User003-Family",
+      "source_sha256": "87d86e1ba1a5cb502188bb8b353ef6de7aa2d633019a089a00c5d985f74b2db6",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-6.json",
+      "diagnostic_sha256": "619680bc6556ac8c7f09a3ae3093b21135b00fe7e5cce73acc5f5b0a2a96484d",
+      "video": {
+        "durationSeconds": 5.393,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 159,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 97,
+        "ready": 62
+      },
+      "longest_run": 62,
+      "candidate_outcomes": {
+        "rejected": 97,
+        "emitted": 4,
+        "valid_not_stride_boundary": 27
+      },
+      "emitted_windows": 4,
+      "reset_reasons": {
+        "no_hands": 97
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User003-Goodafternoon",
+      "source_sha256": "b035ee205348e42a5d427131fd1e40a4d408b000ddcc07173e9c05e2b2ca6968",
+      "diagnostic_path": ".cache/phase3-completion/isl500-pilot-native30/diagnostics-7.json",
+      "diagnostic_sha256": "ee939e0d221e1e1a4cce7fd1768a62cdcfcea0f9cc7bf8b5e0b878e613531c3e",
+      "video": {
+        "durationSeconds": 8.005,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 237,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 158,
+        "ready": 79
+      },
+      "longest_run": 79,
+      "candidate_outcomes": {
+        "rejected": 158,
+        "emitted": 6,
+        "valid_not_stride_boundary": 42
+      },
+      "emitted_windows": 6,
+      "reset_reasons": {
+        "no_hands": 158
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User010-Family",
+      "source_sha256": "ed7446155e74ac16b26ca56dce697dcd235dec432bc3f1bd70121ea919b1778f",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-0.json",
+      "diagnostic_sha256": "98bdec975e35d22286dc32ba60e53a5003ccabda192668657c1bcdab95d97327",
+      "video": {
+        "durationSeconds": 5.509243,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 161,
+      "skipped_duplicate_pts": 5,
+      "frame_reasons": {
+        "no_hands": 105,
+        "ready": 56
+      },
+      "longest_run": 56,
+      "candidate_outcomes": {
+        "rejected": 105,
+        "emitted": 4,
+        "valid_not_stride_boundary": 21
+      },
+      "emitted_windows": 4,
+      "reset_reasons": {
+        "no_hands": 105
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User010-Goodafternoon",
+      "source_sha256": "2755e4bd13056b86d17b2aaac6f767a00999ee8f3aeed01ddd6406377bc42bc3",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-1.json",
+      "diagnostic_sha256": "5edbbb17ccef93883c3dc68bfe82b21f988f7682f84bf5965bb4b3075f6dc0a8",
+      "video": {
+        "durationSeconds": 4.359947,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 127,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 76,
+        "ready": 51
+      },
+      "longest_run": 50,
+      "candidate_outcomes": {
+        "rejected": 77,
+        "emitted": 3,
+        "valid_not_stride_boundary": 16
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 76
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User013-Goodafternoon",
+      "source_sha256": "c4c361460eaf6eee068e2bf689b808fc6705d38f6e8c8e254ba7da26137fbc41",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-10.json",
+      "diagnostic_sha256": "c60a133dfc13c5076f8556567f88c3654b8806f2a752b3d297458bdff3784fb0",
+      "video": {
+        "durationSeconds": 5.676,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 168,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 79,
+        "ready": 89
+      },
+      "longest_run": 89,
+      "candidate_outcomes": {
+        "rejected": 79,
+        "emitted": 8,
+        "valid_not_stride_boundary": 50
+      },
+      "emitted_windows": 8,
+      "reset_reasons": {
+        "no_hands": 79
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User013-Goodmorning",
+      "source_sha256": "6e65c08245e14da7ab356fbc86194d593c5915d235097a198360b82b73c9b976",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-11.json",
+      "diagnostic_sha256": "345e3778ae82c2ed7426be1280a63147d92109ccf84d4acca4eba0daf11d03f3",
+      "video": {
+        "durationSeconds": 4.998,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 147,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 89,
+        "ready": 58
+      },
+      "longest_run": 29,
+      "candidate_outcomes": {
+        "rejected": 116
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 89
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User014-Family",
+      "source_sha256": "95da239e852ef7a532ae46ba1d9f58e873dfa27830b58e7ab7182c417b55543f",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-12.json",
+      "diagnostic_sha256": "6ac28bf45f4a2ed70a6b83e89e3be74071bd1f9c5b968947f74a606af8700b96",
+      "video": {
+        "durationSeconds": 3.456,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 102,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 69,
+        "ready": 33
+      },
+      "longest_run": 21,
+      "candidate_outcomes": {
+        "rejected": 71
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 69
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User014-Goodafternoon",
+      "source_sha256": "77f4d4e60e453e384266de03b2a3f266455a8dea334240d35e3ca11c785a6c42",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-13.json",
+      "diagnostic_sha256": "0ebe8f179c43e1473563061bff19658e3223f27b84b1f50399d22896c41033f5",
+      "video": {
+        "durationSeconds": 3.039,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 89,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 63,
+        "ready": 26
+      },
+      "longest_run": 18,
+      "candidate_outcomes": {
+        "rejected": 58
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 63
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User014-Goodmorning",
+      "source_sha256": "370c94be446926dbaaaf75f660f13b06eec012f4ca564bdcb4076c9fecba9d88",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-14.json",
+      "diagnostic_sha256": "b96a53176e188b4c9f9379cbcb15751eaeeb030a99b36e18c0911259e70a10fb",
+      "video": {
+        "durationSeconds": 3.475,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 102,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 87,
+        "ready": 15
+      },
+      "longest_run": 14,
+      "candidate_outcomes": {
+        "rejected": 71
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 87
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User015-Family",
+      "source_sha256": "0090bd9d772e121b46f6cec486e2385a95ed8dee9e5bdbc24c246059794a0e9d",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-15.json",
+      "diagnostic_sha256": "87754488c6fb0b050170725f7b14fe7b22c930e980c88e96257502082c4dee22",
+      "video": {
+        "durationSeconds": 6.451,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 191,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 117,
+        "ready": 74
+      },
+      "longest_run": 37,
+      "candidate_outcomes": {
+        "rejected": 148,
+        "emitted": 2,
+        "valid_not_stride_boundary": 10
+      },
+      "emitted_windows": 2,
+      "reset_reasons": {
+        "no_hands": 117
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User015-Goodafternoon",
+      "source_sha256": "68edd59700d84b54340bb011d96bb89db7dba64f95681ae0e1b8a6665ee02306",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-16.json",
+      "diagnostic_sha256": "13c5c0b8e9ac2614a10e2912d2740075b27d35c6f2c4b42c43d59c6192c965b2",
+      "video": {
+        "durationSeconds": 5.354,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 158,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 104,
+        "ready": 54
+      },
+      "longest_run": 54,
+      "candidate_outcomes": {
+        "rejected": 104,
+        "emitted": 3,
+        "valid_not_stride_boundary": 20
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 104
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User015-Goodmorning",
+      "source_sha256": "61b9cb333ff145d907b0a1e1dbffa22782e93fcb6f76408efea976bacc02d1d4",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-17.json",
+      "diagnostic_sha256": "f505c46b7b7458545309e49da0c3d1cb0d0ba3756ee9a549e24b40ad33f4fb3b",
+      "video": {
+        "durationSeconds": 4.479,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 132,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 101,
+        "ready": 31
+      },
+      "longest_run": 20,
+      "candidate_outcomes": {
+        "rejected": 101
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 101
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User010-Goodmorning",
+      "source_sha256": "6e56d5c19c793362a41130c888dc9e010ffc08af9b3f22494d2129aac1babd58",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-2.json",
+      "diagnostic_sha256": "0dafb515e3487e153534f31552ee5f651ca4b37182128899b6ecdcea5ed25c59",
+      "video": {
+        "durationSeconds": 4.39375,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 128,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 73,
+        "ready": 55
+      },
+      "longest_run": 55,
+      "candidate_outcomes": {
+        "rejected": 73,
+        "emitted": 3,
+        "valid_not_stride_boundary": 21
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 73
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User011-Family",
+      "source_sha256": "eeede27328b6dbad5574c3b6206382be0f1b2deb5f59e68fb46398db85e182f1",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-3.json",
+      "diagnostic_sha256": "8e5294a3dfdcab35d6bb0d4e828d1ae69049c9c70b8638436c55ee011159617b",
+      "video": {
+        "durationSeconds": 3.823,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 113,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 75,
+        "ready": 38
+      },
+      "longest_run": 38,
+      "candidate_outcomes": {
+        "rejected": 75,
+        "emitted": 1,
+        "valid_not_stride_boundary": 6
+      },
+      "emitted_windows": 1,
+      "reset_reasons": {
+        "no_hands": 75
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User011-Goodafternoon",
+      "source_sha256": "809cb12666828777020b33b17ec20efd16fa28e5ba7fb8cd63c6c51e44ad60ae",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-4.json",
+      "diagnostic_sha256": "a6d498523d2bdb1e4046f08e9dacd09db7d30c3e2ea2b9b22aeb5ae49b7f969d",
+      "video": {
+        "durationSeconds": 4.216,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 124,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 83,
+        "ready": 41
+      },
+      "longest_run": 41,
+      "candidate_outcomes": {
+        "rejected": 83,
+        "emitted": 2,
+        "valid_not_stride_boundary": 8
+      },
+      "emitted_windows": 2,
+      "reset_reasons": {
+        "no_hands": 83
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User011-Goodmorning",
+      "source_sha256": "155ca9a8c05b338138f691bce72d2f698889520da64b32129a09cd658222c650",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-5.json",
+      "diagnostic_sha256": "a79585864fb55f0b50875ee11b631c32e9fec362b487d4c2233e5116dd934fac",
+      "video": {
+        "durationSeconds": 3.773,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 111,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 80,
+        "ready": 31
+      },
+      "longest_run": 16,
+      "candidate_outcomes": {
+        "rejected": 80
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 80
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User012-Family",
+      "source_sha256": "536154b189f3b5fb48751c24ce05f3626a4620095265c30a5a28f55c19336093",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-6.json",
+      "diagnostic_sha256": "9932872e74b40cf4241e53845f0fc79091c97ac5aafb68cc2a1c0433703106cc",
+      "video": {
+        "durationSeconds": 4.062,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 120,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 68,
+        "ready": 52
+      },
+      "longest_run": 52,
+      "candidate_outcomes": {
+        "rejected": 68,
+        "emitted": 3,
+        "valid_not_stride_boundary": 18
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 68
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User012-Goodafternoon",
+      "source_sha256": "03c10f32380e3339ab34514350cd96eebd5500a0b21566adebc97e53ccc7f488",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-7.json",
+      "diagnostic_sha256": "c032493afdc0279f422758a8e33c459cc04df8ac667c15429ac1451197b7cce3",
+      "video": {
+        "durationSeconds": 3.747,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 110,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 61,
+        "ready": 49
+      },
+      "longest_run": 33,
+      "candidate_outcomes": {
+        "rejected": 77,
+        "emitted": 1,
+        "valid_not_stride_boundary": 1
+      },
+      "emitted_windows": 1,
+      "reset_reasons": {
+        "no_hands": 61
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User012-Goodmorning",
+      "source_sha256": "8048a2c82172a421883684e55dc634047d2eaeb6936bd804b01cea5f794f6282",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-8.json",
+      "diagnostic_sha256": "4b0cf31f2485377f8786e3977c93edbdda967992c184e6c7964391dbfe414ea7",
+      "video": {
+        "durationSeconds": 3.585,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 106,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 62,
+        "ready": 44
+      },
+      "longest_run": 44,
+      "candidate_outcomes": {
+        "rejected": 62,
+        "emitted": 2,
+        "valid_not_stride_boundary": 11
+      },
+      "emitted_windows": 2,
+      "reset_reasons": {
+        "no_hands": 62
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User013-Family",
+      "source_sha256": "c4eebf435aaa987379b879598fdf5c5abaaff08c04319e4696e44b97c9a59772",
+      "diagnostic_path": ".cache/phase3-completion/isl500-evaluation-native30/diagnostics-9.json",
+      "diagnostic_sha256": "997b661fa8aab50097e8cf1ec4c7ef5dc212011a18f6569a8f4ae4e97fab9437",
+      "video": {
+        "durationSeconds": 4.901,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 145,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 91,
+        "ready": 54
+      },
+      "longest_run": 54,
+      "candidate_outcomes": {
+        "rejected": 91,
+        "emitted": 3,
+        "valid_not_stride_boundary": 20
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 91
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User004-Goodafternoon",
+      "source_sha256": "32e27ec804a17be2873ee510fd452579567233b2c9dc219746302bb4bfcbc216",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch1/diagnostics-1.json",
+      "diagnostic_sha256": "96e8988ca7a03a735d933714a1c8140bfeb2578d2a41273441fbff95171265be",
+      "video": {
+        "durationSeconds": 3.053,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 90,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 55,
+        "ready": 35
+      },
+      "longest_run": 35,
+      "candidate_outcomes": {
+        "rejected": 55,
+        "emitted": 1,
+        "valid_not_stride_boundary": 3
+      },
+      "emitted_windows": 1,
+      "reset_reasons": {
+        "no_hands": 55
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User005-Family",
+      "source_sha256": "b3376def69f7ef4756593b6b33545fb7a20f7758f2c5df74266e06c5aad5b4d6",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch1/diagnostics-2.json",
+      "diagnostic_sha256": "86166f065822a5e8998826000387a44e4627c8325276b2f27cbb6e41d9c7337f",
+      "video": {
+        "durationSeconds": 5.198,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 153,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 80,
+        "ready": 73
+      },
+      "longest_run": 73,
+      "candidate_outcomes": {
+        "rejected": 80,
+        "emitted": 6,
+        "valid_not_stride_boundary": 36
+      },
+      "emitted_windows": 6,
+      "reset_reasons": {
+        "no_hands": 80
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User005-Goodafternoon",
+      "source_sha256": "1ef06fb527aa9f8494a9a0054e8ffbde686c4cb7f87d1f126ab483203da3a6d2",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch1/diagnostics-3.json",
+      "diagnostic_sha256": "4e060a0a0b109547bbc04bf06b9a580eaa2cdb4bbd85a7637f2d913f8a7447f3",
+      "video": {
+        "durationSeconds": 4.589,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 135,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 75,
+        "ready": 60
+      },
+      "longest_run": 60,
+      "candidate_outcomes": {
+        "rejected": 75,
+        "emitted": 4,
+        "valid_not_stride_boundary": 25
+      },
+      "emitted_windows": 4,
+      "reset_reasons": {
+        "no_hands": 75
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User006-Family",
+      "source_sha256": "ba8018f5750af43028c4fd9c3dc5629b5b909c25b812097b04e019bcb0835fbf",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch1/diagnostics-4.json",
+      "diagnostic_sha256": "dfaa7e353965cc849307829d6a427ee8df4f522909f4ccf425b70e902222af8c",
+      "video": {
+        "durationSeconds": 6.204,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 183,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 131,
+        "ready": 52
+      },
+      "longest_run": 52,
+      "candidate_outcomes": {
+        "rejected": 131,
+        "emitted": 3,
+        "valid_not_stride_boundary": 18
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 131
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User006-Goodafternoon",
+      "source_sha256": "8c8950c479e4b2dd2a824d903d8ff21aba89c451142ec018f9cbcbf20a346b70",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch1/diagnostics-5.json",
+      "diagnostic_sha256": "39767b63a50d8b40b4e3c327fd8c93d4960498f4f7a9106a2574f9210f92e902",
+      "video": {
+        "durationSeconds": 6.476,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 191,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 130,
+        "ready": 61
+      },
+      "longest_run": 60,
+      "candidate_outcomes": {
+        "rejected": 131,
+        "emitted": 4,
+        "valid_not_stride_boundary": 25
+      },
+      "emitted_windows": 4,
+      "reset_reasons": {
+        "no_hands": 130
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User007-Family",
+      "source_sha256": "95c326ce07726f9c269d7e03bb71fab09858cc720055c62968d93ab5729ae347",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch2/diagnostics-0.json",
+      "diagnostic_sha256": "c362c1e710b7ebcc889f853c48ef619054c898ee4ee758202be955b6106b990f",
+      "video": {
+        "durationSeconds": 6.185915,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 183,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 119,
+        "ready": 64
+      },
+      "longest_run": 64,
+      "candidate_outcomes": {
+        "rejected": 119,
+        "emitted": 5,
+        "valid_not_stride_boundary": 28
+      },
+      "emitted_windows": 5,
+      "reset_reasons": {
+        "no_hands": 119
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User007-Goodafternoon",
+      "source_sha256": "df0b20f43ab1dde3a81229de45b626c0256bbdc859b2798a88f6821be3c60b30",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch2/diagnostics-1.json",
+      "diagnostic_sha256": "cb024757d4a7ac62d4b3c39249c8b4712e617f6d01e6f504ff46191d3243e8e5",
+      "video": {
+        "durationSeconds": 5.64507,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 166,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 114,
+        "ready": 52
+      },
+      "longest_run": 29,
+      "candidate_outcomes": {
+        "rejected": 135
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 114
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User008-Goodafternoon",
+      "source_sha256": "2ce80017be11f7ed5312aece134f77391b8bb79c5aa5e1f5843a390e6f635405",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch2/diagnostics-3.json",
+      "diagnostic_sha256": "8896e7d40c32c9ba4ab59cd06690135d0d034557bd813783b92610b087c8c0bc",
+      "video": {
+        "durationSeconds": 3.198,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 94,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 59,
+        "ready": 35
+      },
+      "longest_run": 23,
+      "candidate_outcomes": {
+        "rejected": 63
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 59
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User009-Family",
+      "source_sha256": "80ec21b35c88cf797591d8dc9b65c58f10e7539f9fae7f7458685fea3cdaafc7",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch2/diagnostics-4.json",
+      "diagnostic_sha256": "71402dd8616795bd3f6c7e70c88e8b3384fd546b9eb048f1e566636f9be20bd9",
+      "video": {
+        "durationSeconds": 5.561359,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 163,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 93,
+        "ready": 70
+      },
+      "longest_run": 70,
+      "candidate_outcomes": {
+        "rejected": 93,
+        "emitted": 5,
+        "valid_not_stride_boundary": 34
+      },
+      "emitted_windows": 5,
+      "reset_reasons": {
+        "no_hands": 93
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User009-Goodafternoon",
+      "source_sha256": "433117b493bb040ba8f16825dabba43dceb46d18f65125947826222ff0a2e7d2",
+      "diagnostic_path": ".cache/phase3-completion/isl500-train-batch2/diagnostics-5.json",
+      "diagnostic_sha256": "550b13af324741df2d1d0a89d47d9d400bcf1a9aa081437e276c3304514b4c7f",
+      "video": {
+        "durationSeconds": 4.920909,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 144,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 92,
+        "ready": 52
+      },
+      "longest_run": 52,
+      "candidate_outcomes": {
+        "rejected": 92,
+        "emitted": 3,
+        "valid_not_stride_boundary": 18
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 92
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User004-Family",
+      "source_sha256": "92dd920affa4dad509c7bbb67b7bd91f3074dc38e2d574b07c34a3fb0f5892d5",
+      "diagnostic_path": ".cache/phase3-completion/known-partial-decode-audit/diagnostics-0.json",
+      "diagnostic_sha256": "8b2fc81e6ab7558bbf3e4763c2b420afa9d5484bbe6992d0bec7bf4dafa682cd",
+      "video": {
+        "durationSeconds": 5.807,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 171,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 92,
+        "ready": 79
+      },
+      "longest_run": 48,
+      "candidate_outcomes": {
+        "rejected": 123,
+        "emitted": 3,
+        "valid_not_stride_boundary": 14
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 92
+      },
+      "decode_failure": {
+        "requestedMs": 5799.999999999989,
+        "lastDecodedMs": 5741.222,
+        "decodedFrames": 171,
+        "detail": "Decoded frame presentation timeout."
+      }
+    },
+    {
+      "id": "User008-Family",
+      "source_sha256": "39f9e4f05413ae08ef7191d6802c2e7310b94f5c10d989d96b75bbd0eda90915",
+      "diagnostic_path": ".cache/phase3-completion/known-partial-decode-audit/diagnostics-1.json",
+      "diagnostic_sha256": "ae6a0ec8003dcae774e1a9c9e5396e630840ebd12e3da5a2d0aef851f9bca29a",
+      "video": {
+        "durationSeconds": 3.335,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 98,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 55,
+        "ready": 43
+      },
+      "longest_run": 29,
+      "candidate_outcomes": {
+        "rejected": 67
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 55
+      },
+      "decode_failure": {
+        "requestedMs": 3333.333333333331,
+        "lastDecodedMs": 3275.922,
+        "decodedFrames": 98,
+        "detail": "Decoded frame presentation timeout."
+      }
+    },
+    {
+      "id": "User010-Goodevening",
+      "source_sha256": "40408691f37671de2445cd0430de5b0f554393c65c5af4267c1b1ddc8a7e2577",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-0.json",
+      "diagnostic_sha256": "c12400e719d177e35aaae308941aacac6a8c157df89259b074b3e94b355d3eb0",
+      "video": {
+        "durationSeconds": 4.495158,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 131,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 76,
+        "ready": 55
+      },
+      "longest_run": 55,
+      "candidate_outcomes": {
+        "rejected": 76,
+        "emitted": 3,
+        "valid_not_stride_boundary": 21
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 76
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User010-Goodnight",
+      "source_sha256": "0896312ae358fe175a1501e7fe114ba8c830057b1c9caf0d05b4a91ef1fd6754",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-1.json",
+      "diagnostic_sha256": "c75914dad15bb150992c621df651896185ae50593a2a0efaf80d4117c8a79619",
+      "video": {
+        "durationSeconds": 4.39375,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 128,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 77,
+        "ready": 51
+      },
+      "longest_run": 51,
+      "candidate_outcomes": {
+        "rejected": 77,
+        "emitted": 3,
+        "valid_not_stride_boundary": 17
+      },
+      "emitted_windows": 3,
+      "reset_reasons": {
+        "no_hands": 77
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User011-Goodevening",
+      "source_sha256": "2cdb9f6992d5cfc076b31f848fdfdb82241e3ebe2f6e8621c1403c2d39d57586",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-2.json",
+      "diagnostic_sha256": "ff902530b1d173e854d94491d6562ffd7ee42fbdf88700696d80319ef67c3456",
+      "video": {
+        "durationSeconds": 4.451,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 131,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 95,
+        "ready": 36
+      },
+      "longest_run": 26,
+      "candidate_outcomes": {
+        "rejected": 100
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 95
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User011-Goodnight",
+      "source_sha256": "60b5434c72fa92c6231764e1ef4073461f775768d4ab7aebafcda26fcd27fc16",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-3.json",
+      "diagnostic_sha256": "ce43422b97f31679cc96ce10cd5815c1cc77e44d2041341d338e469d19d4f303",
+      "video": {
+        "durationSeconds": 3.674,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 108,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 83,
+        "ready": 25
+      },
+      "longest_run": 25,
+      "candidate_outcomes": {
+        "rejected": 77
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 83
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User012-Goodevening",
+      "source_sha256": "6b3a6d3328a1a27d9c4435088e7429e6bbc63e18645c1e2739270e4e19d86d36",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-4.json",
+      "diagnostic_sha256": "188880bcc2a71b49fe776983f59fc9f05b7354cc21abc8134d950dee0c91da74",
+      "video": {
+        "durationSeconds": 5.17,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 153,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 119,
+        "ready": 34
+      },
+      "longest_run": 29,
+      "candidate_outcomes": {
+        "rejected": 122
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 119
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User012-Goodnight",
+      "source_sha256": "b108534b908b84b0809c916cc4197d4ad5d2b123eef74e018298767e7d0c1373",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-native30/diagnostics-5.json",
+      "diagnostic_sha256": "1038c600cbbdf645f5e97b0170ff220862984a82b502cc06c0e9dd853ca6c63b",
+      "video": {
+        "durationSeconds": 4.988,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 147,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 110,
+        "ready": 37
+      },
+      "longest_run": 28,
+      "candidate_outcomes": {
+        "rejected": 116
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 110
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User013-Goodevening",
+      "source_sha256": "e4dc645a2dd6c3bf65f3001502bf682991729ad7a4dd3104ca6c60d3cc01c0f7",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-remaining-native30/diagnostics-0.json",
+      "diagnostic_sha256": "182d09dcbdcf4bda3951bcabb7c0a5d9b777dacee304df001bbca278f0b923fc",
+      "video": {
+        "durationSeconds": 5.955,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 176,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 108,
+        "ready": 68
+      },
+      "longest_run": 62,
+      "candidate_outcomes": {
+        "rejected": 114,
+        "emitted": 4,
+        "valid_not_stride_boundary": 27
+      },
+      "emitted_windows": 4,
+      "reset_reasons": {
+        "no_hands": 108
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User013-Goodnight",
+      "source_sha256": "9c97cfaeee0517516b57469e6a97d0736428911e01f20bd3a50405cd1b5cc560",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-remaining-native30/diagnostics-1.json",
+      "diagnostic_sha256": "acddf2500df6efd890018252c703f4fcdfc83df71a2ab4f0799148c4d2080003",
+      "video": {
+        "durationSeconds": 5.668,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 166,
+      "skipped_duplicate_pts": 5,
+      "frame_reasons": {
+        "no_hands": 84,
+        "ready": 82
+      },
+      "longest_run": 82,
+      "candidate_outcomes": {
+        "rejected": 84,
+        "emitted": 7,
+        "valid_not_stride_boundary": 44
+      },
+      "emitted_windows": 7,
+      "reset_reasons": {
+        "no_hands": 84
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User014-Goodevening",
+      "source_sha256": "281d1019e09a817c04a753d44f506b7dd4883db70e86daa6be8645d6c043dc47",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-remaining-native30/diagnostics-2.json",
+      "diagnostic_sha256": "b073434986563a6df96e7e9f0756fb18f23cf984bc1b3ce76a6b2d1f893cfa32",
+      "video": {
+        "durationSeconds": 3.632,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 107,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 75,
+        "ready": 32
+      },
+      "longest_run": 19,
+      "candidate_outcomes": {
+        "rejected": 76
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 75
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User015-Goodevening",
+      "source_sha256": "73e91b6fb079c2dabf96ae1ee035a802ce716a3612105b8404d835f1e7b98cc8",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-remaining-native30/diagnostics-4.json",
+      "diagnostic_sha256": "56ce7fdd022938d808486e18c6a6efd80b9c6e277c6b68b7ce2ea891f3ff4dce",
+      "video": {
+        "durationSeconds": 5.871,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 173,
+      "skipped_duplicate_pts": 4,
+      "frame_reasons": {
+        "no_hands": 130,
+        "ready": 43
+      },
+      "longest_run": 28,
+      "candidate_outcomes": {
+        "rejected": 142
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 130
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User015-Goodnight",
+      "source_sha256": "1f8ecb4261fb76232fcdc64f44a211a815e23d21b0d3a547b057b8d0848a16c0",
+      "diagnostic_path": ".cache/phase3-completion/isl500-unknown-remaining-native30/diagnostics-5.json",
+      "diagnostic_sha256": "634c53a22b76f20717d542c762bd7042a341da01dada0ccc4f3dc9e948bebac0",
+      "video": {
+        "durationSeconds": 6.059,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 179,
+      "skipped_duplicate_pts": 3,
+      "frame_reasons": {
+        "no_hands": 143,
+        "ready": 36
+      },
+      "longest_run": 31,
+      "candidate_outcomes": {
+        "rejected": 148
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 143
+      },
+      "decode_failure": null
+    },
+    {
+      "id": "User014-Goodnight",
+      "source_sha256": "4a1fae19b90a5f38ef44be6cb8ef03a7bee0efc456683c30deab03c2d1aaad39",
+      "diagnostic_path": ".cache/phase3-completion/unknown-partial-decode-audit/diagnostics-0.json",
+      "diagnostic_sha256": "23796eef9cd1c61fb887ac4f2a909ad55c69aea2733f6fb3606c42cf6d8161c5",
+      "video": {
+        "durationSeconds": 4.234,
+        "width": 2560,
+        "height": 1440,
+        "timestampBasis": "requestVideoFrameCallback mediaTime; duplicate decoded PTS skipped"
+      },
+      "decoded_sample_count": 125,
+      "skipped_duplicate_pts": 2,
+      "frame_reasons": {
+        "no_hands": 103,
+        "ready": 22
+      },
+      "longest_run": 22,
+      "candidate_outcomes": {
+        "rejected": 94
+      },
+      "emitted_windows": 0,
+      "reset_reasons": {
+        "no_hands": 103
+      },
+      "decode_failure": {
+        "requestedMs": 4233.3333333333285,
+        "lastDecodedMs": 4187.889,
+        "decodedFrames": 125,
+        "detail": "Decoded frame presentation timeout."
+      }
+    }
+  ]
+}

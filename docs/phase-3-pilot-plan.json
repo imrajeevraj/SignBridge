@@ -1,0 +1,53 @@
+{
+  "status": "Frozen before training; targets, not achieved sample counts",
+  "source_revision": "bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "language": "ISL",
+  "schema": "signbridge.custom-gru.v2",
+  "labels": [
+    "Family",
+    "Goodafternoon",
+    "Goodmorning"
+  ],
+  "splits": {
+    "train": [
+      "User001",
+      "User002",
+      "User003",
+      "User004",
+      "User005",
+      "User006",
+      "User007",
+      "User008",
+      "User009"
+    ],
+    "validation": [
+      "User010",
+      "User011",
+      "User012"
+    ],
+    "test": [
+      "User013",
+      "User014",
+      "User015"
+    ]
+  },
+  "sampling": "Approved amendment: cap30 Hz, distinct native decoded PTS, 32 consecutive frames/stride8; no padding",
+  "selection": "Source glosses selected for multi-part movements during extraction feasibility; no model/test accuracy observed",
+  "training": {
+    "seed": 42,
+    "epochs": 100,
+    "batch_size": 16,
+    "patience": 12,
+    "hidden_size": 128,
+    "layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "device": "cpu"
+  },
+  "unknown_labels": [
+    "Goodevening",
+    "Goodnight"
+  ],
+  "unknown_split": "validation/test signers only; disjoint glosses; no training or threshold selection using final test data",
+  "preprocessing": "tasks-vision-1.1.1.hand-v1.pose-lite-v1.custom-gru-v2-native30"
+}

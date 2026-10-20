@@ -1,0 +1,87 @@
+{
+  "purpose": "real_labeled_data",
+  "dataset_id": "ISL500-remaining-unknown",
+  "language": "ISL",
+  "source": "https://huggingface.co/datasets/ISL500/ISL-DATA/tree/bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "license": "Research and academic use only; dataset card; no commercial permission",
+  "labels": [
+    "Goodevening",
+    "Goodnight"
+  ],
+  "feature_schema": "signbridge.custom-gru.v2",
+  "sampling_hz": 30,
+  "samples": [
+    {
+      "id": "User011-Goodevening",
+      "label": "Goodevening",
+      "signer_id": "User011",
+      "duplicate_group": "Videos/User011/Goodevening__session191__clip022.mp4",
+      "split": "validation",
+      "video_path": "../../.cache/phase3-completion/User011-Goodevening.mp4",
+      "source_sha256": "2cdb9f6992d5cfc076b31f848fdfdb82241e3ebe2f6e8621c1403c2d39d57586"
+    },
+    {
+      "id": "User011-Goodnight",
+      "label": "Goodnight",
+      "signer_id": "User011",
+      "duplicate_group": "Videos/User011/Goodnight__session172__clip013.mp4",
+      "split": "validation",
+      "video_path": "../../.cache/phase3-completion/User011-Goodnight.mp4",
+      "source_sha256": "60b5434c72fa92c6231764e1ef4073461f775768d4ab7aebafcda26fcd27fc16"
+    },
+    {
+      "id": "User012-Goodevening",
+      "label": "Goodevening",
+      "signer_id": "User012",
+      "duplicate_group": "Videos/User012/Goodevening__session333__clip002.mp4",
+      "split": "validation",
+      "video_path": "../../.cache/phase3-completion/User012-Goodevening.mp4",
+      "source_sha256": "6b3a6d3328a1a27d9c4435088e7429e6bbc63e18645c1e2739270e4e19d86d36"
+    },
+    {
+      "id": "User012-Goodnight",
+      "label": "Goodnight",
+      "signer_id": "User012",
+      "duplicate_group": "Videos/User012/Goodnight__session293__clip004.mp4",
+      "split": "validation",
+      "video_path": "../../.cache/phase3-completion/User012-Goodnight.mp4",
+      "source_sha256": "b108534b908b84b0809c916cc4197d4ad5d2b123eef74e018298767e7d0c1373"
+    },
+    {
+      "id": "User014-Goodevening",
+      "label": "Goodevening",
+      "signer_id": "User014",
+      "duplicate_group": "Videos/User014/Goodevening__session138__clip011.mp4",
+      "split": "test",
+      "video_path": "../../.cache/phase3-completion/User014-Goodevening.mp4",
+      "source_sha256": "281d1019e09a817c04a753d44f506b7dd4883db70e86daa6be8645d6c043dc47"
+    },
+    {
+      "id": "User014-Goodnight",
+      "label": "Goodnight",
+      "signer_id": "User014",
+      "duplicate_group": "Videos/User014/Goodnight__session112__clip004.mp4",
+      "split": "test",
+      "video_path": "../../.cache/phase3-completion/User014-Goodnight.mp4",
+      "source_sha256": "4a1fae19b90a5f38ef44be6cb8ef03a7bee0efc456683c30deab03c2d1aaad39"
+    },
+    {
+      "id": "User015-Goodevening",
+      "label": "Goodevening",
+      "signer_id": "User015",
+      "duplicate_group": "Videos/User015/Goodevening__session125__clip026.mp4",
+      "split": "test",
+      "video_path": "../../.cache/phase3-completion/User015-Goodevening.mp4",
+      "source_sha256": "73e91b6fb079c2dabf96ae1ee035a802ce716a3612105b8404d835f1e7b98cc8"
+    },
+    {
+      "id": "User015-Goodnight",
+      "label": "Goodnight",
+      "signer_id": "User015",
+      "duplicate_group": "Videos/User015/Goodnight__session118__clip010.mp4",
+      "split": "test",
+      "video_path": "../../.cache/phase3-completion/User015-Goodnight.mp4",
+      "source_sha256": "1f8ecb4261fb76232fcdc64f44a211a815e23d21b0d3a547b057b8d0848a16c0"
+    }
+  ]
+}

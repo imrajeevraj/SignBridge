@@ -1,0 +1,2 @@
+# Optional offline source-video diagnostics. Not needed by the backend/studio.
+av==18.1.0

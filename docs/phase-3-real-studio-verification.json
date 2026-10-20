@@ -1,0 +1,869 @@
+{
+  "date": "2026-10-20",
+  "physical_camera_used": false,
+  "runs": [
+    {
+      "run": "real-studio-frame-audit",
+      "passed": false,
+      "kind": "PRERECORDED REAL RESEARCH VIDEO, not physical-camera acceptance",
+      "sourceVideo": "User001-Family.mp4",
+      "source_sha256": "97337f5357dca2738910d3798bbb839ae56c9c301f11c3b122dfef4db8764259",
+      "checkpoint_sha256": "b657712b1c7f5a6ae8107f33e7a74ac535ee100817518494e1495bbfc17ab031",
+      "replayTransform": "Native 2560x1440, 1x playback",
+      "processed_frames": 43,
+      "usable_frames": 12,
+      "maximum_buffer": 2,
+      "windows_emitted": 0,
+      "median_processing_ms": 210.2999999821186,
+      "prediction_requests": 0,
+      "predictions": 0,
+      "visible_label": null,
+      "camera_released": true,
+      "output_cleared": true,
+      "failure": "No accepted sign became visible during the unmodified real clip replay.",
+      "frame_results": [
+        {
+          "timestampMs": 1455.6,
+          "processingMs": 735,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 1
+        },
+        {
+          "timestampMs": 2198.6,
+          "processingMs": 204.30000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 2
+        },
+        {
+          "timestampMs": 2441.8,
+          "processingMs": 202.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 3
+        },
+        {
+          "timestampMs": 2677.9,
+          "processingMs": 185.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 4
+        },
+        {
+          "timestampMs": 2872.4,
+          "processingMs": 225.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 5
+        },
+        {
+          "timestampMs": 3115.4,
+          "processingMs": 225.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3344.5,
+          "processingMs": 290.40000000596046,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3657.2,
+          "processingMs": 262.19999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 7
+        },
+        {
+          "timestampMs": 3920.8,
+          "processingMs": 210.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 8
+        },
+        {
+          "timestampMs": 4164.1,
+          "processingMs": 300.40000000596046,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 8
+        },
+        {
+          "timestampMs": 4497.3,
+          "processingMs": 174.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 9
+        },
+        {
+          "timestampMs": 4705.5,
+          "processingMs": 273.10000002384186,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 9
+        },
+        {
+          "timestampMs": 5004.3,
+          "processingMs": 222.69999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 10
+        },
+        {
+          "timestampMs": 5240.5,
+          "processingMs": 235.90000000596046,
+          "featureState": "ready",
+          "bufferSize": 2,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 10
+        },
+        {
+          "timestampMs": 5511.2,
+          "processingMs": 231.59999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 11
+        },
+        {
+          "timestampMs": 5747.3,
+          "processingMs": 188.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 12
+        },
+        {
+          "timestampMs": 5948.8,
+          "processingMs": 186.09999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 13
+        },
+        {
+          "timestampMs": 6157,
+          "processingMs": 178.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 14
+        },
+        {
+          "timestampMs": 6358.4,
+          "processingMs": 185.80000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 15
+        },
+        {
+          "timestampMs": 6560,
+          "processingMs": 321.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 16
+        },
+        {
+          "timestampMs": 6900.1,
+          "processingMs": 210.09999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 17
+        },
+        {
+          "timestampMs": 7136.2,
+          "processingMs": 206.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 18
+        },
+        {
+          "timestampMs": 7379.2,
+          "processingMs": 185.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 19
+        },
+        {
+          "timestampMs": 7566.7,
+          "processingMs": 289.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 20
+        },
+        {
+          "timestampMs": 7886.3,
+          "processingMs": 419.60000002384186,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 21
+        },
+        {
+          "timestampMs": 8309.8,
+          "processingMs": 421.90000000596046,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 22
+        },
+        {
+          "timestampMs": 8754.1,
+          "processingMs": 225.80000001192093,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 23
+        },
+        {
+          "timestampMs": 8983.3,
+          "processingMs": 249.5,
+          "featureState": "ready",
+          "bufferSize": 2,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 23
+        },
+        {
+          "timestampMs": 9261.4,
+          "processingMs": 389.09999999403954,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 24
+        },
+        {
+          "timestampMs": 9671.3,
+          "processingMs": 348.80000001192093,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 25
+        },
+        {
+          "timestampMs": 10039.1,
+          "processingMs": 298.30000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 26
+        },
+        {
+          "timestampMs": 10344.7,
+          "processingMs": 193.80000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 27
+        },
+        {
+          "timestampMs": 10545.7,
+          "processingMs": 150.39999997615814,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 28
+        },
+        {
+          "timestampMs": 10712.4,
+          "processingMs": 136.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 29
+        },
+        {
+          "timestampMs": 10851.4,
+          "processingMs": 139.30000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 30
+        },
+        {
+          "timestampMs": 11018.1,
+          "processingMs": 140.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 31
+        },
+        {
+          "timestampMs": 11184.7,
+          "processingMs": 154.59999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 32
+        },
+        {
+          "timestampMs": 11358.3,
+          "processingMs": 153.59999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 33
+        },
+        {
+          "timestampMs": 11525,
+          "processingMs": 159.2999999821186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 34
+        },
+        {
+          "timestampMs": 11691.5,
+          "processingMs": 184.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 35
+        },
+        {
+          "timestampMs": 11893,
+          "processingMs": 225.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 36
+        },
+        {
+          "timestampMs": 12129.4,
+          "processingMs": 320.2000000178814,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 37
+        },
+        {
+          "timestampMs": 12469.5,
+          "processingMs": 181.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 38
+        }
+      ]
+    },
+    {
+      "run": "real-studio-640",
+      "passed": false,
+      "kind": "PRERECORDED REAL RESEARCH VIDEO, not physical-camera acceptance",
+      "sourceVideo": "User001-Family.mp4",
+      "source_sha256": "97337f5357dca2738910d3798bbb839ae56c9c301f11c3b122dfef4db8764259",
+      "checkpoint_sha256": "b657712b1c7f5a6ae8107f33e7a74ac535ee100817518494e1495bbfc17ab031",
+      "replayTransform": "Uniform spatial resize to width 640; native 1x playback; distinct decoded frames only",
+      "processed_frames": 48,
+      "usable_frames": 15,
+      "maximum_buffer": 3,
+      "windows_emitted": 0,
+      "median_processing_ms": 187.3999999910593,
+      "prediction_requests": 0,
+      "predictions": 0,
+      "visible_label": null,
+      "camera_released": true,
+      "output_cleared": true,
+      "failure": "No accepted sign became visible during the real clip replay at native speed.",
+      "frame_results": [
+        {
+          "timestampMs": 1665.7,
+          "processingMs": 700.7000000178814,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 1
+        },
+        {
+          "timestampMs": 2401.7,
+          "processingMs": 125.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 2
+        },
+        {
+          "timestampMs": 2540.6,
+          "processingMs": 146,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 3
+        },
+        {
+          "timestampMs": 2707.3,
+          "processingMs": 129.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 4
+        },
+        {
+          "timestampMs": 2839.1,
+          "processingMs": 141.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 5
+        },
+        {
+          "timestampMs": 3005.9,
+          "processingMs": 184.09999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3207.2,
+          "processingMs": 233.19999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3450.5,
+          "processingMs": 190.40000000596046,
+          "featureState": "ready",
+          "bufferSize": 2,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3651.8,
+          "processingMs": 141.30000001192093,
+          "featureState": "ready",
+          "bufferSize": 3,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 6
+        },
+        {
+          "timestampMs": 3818.3,
+          "processingMs": 190.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 7
+        },
+        {
+          "timestampMs": 4019.7,
+          "processingMs": 260.19999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 7
+        },
+        {
+          "timestampMs": 4304.5,
+          "processingMs": 210.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 8
+        },
+        {
+          "timestampMs": 4533.8,
+          "processingMs": 287.80000001192093,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 8
+        },
+        {
+          "timestampMs": 4825.3,
+          "processingMs": 230.40000000596046,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 9
+        },
+        {
+          "timestampMs": 5068.4,
+          "processingMs": 200.40000000596046,
+          "featureState": "ready",
+          "bufferSize": 2,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 9
+        },
+        {
+          "timestampMs": 5276.7,
+          "processingMs": 170.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 10
+        },
+        {
+          "timestampMs": 5471.3,
+          "processingMs": 139,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 11
+        },
+        {
+          "timestampMs": 5651.8,
+          "processingMs": 156.80000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 12
+        },
+        {
+          "timestampMs": 5811.3,
+          "processingMs": 351.60000002384186,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 13
+        },
+        {
+          "timestampMs": 6165.6,
+          "processingMs": 166.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 14
+        },
+        {
+          "timestampMs": 6387.6,
+          "processingMs": 183.59999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 15
+        },
+        {
+          "timestampMs": 6596.1,
+          "processingMs": 257,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 16
+        },
+        {
+          "timestampMs": 6860,
+          "processingMs": 160.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 17
+        },
+        {
+          "timestampMs": 7026.5,
+          "processingMs": 129.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 18
+        },
+        {
+          "timestampMs": 7158.6,
+          "processingMs": 160,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 19
+        },
+        {
+          "timestampMs": 7339,
+          "processingMs": 138.69999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 20
+        },
+        {
+          "timestampMs": 7505.8,
+          "processingMs": 175.30000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 21
+        },
+        {
+          "timestampMs": 7700.3,
+          "processingMs": 412.2999999821186,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 21
+        },
+        {
+          "timestampMs": 8116.9,
+          "processingMs": 263.5,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 22
+        },
+        {
+          "timestampMs": 8415.5,
+          "processingMs": 184.39999997615814,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 23
+        },
+        {
+          "timestampMs": 8616.9,
+          "processingMs": 201.90000000596046,
+          "featureState": "ready",
+          "bufferSize": 2,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 23
+        },
+        {
+          "timestampMs": 8859.9,
+          "processingMs": 318.69999998807907,
+          "featureState": "ready",
+          "bufferSize": 3,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 23
+        },
+        {
+          "timestampMs": 9186.2,
+          "processingMs": 243.19999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 24
+        },
+        {
+          "timestampMs": 9457.2,
+          "processingMs": 266.69999998807907,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 25
+        },
+        {
+          "timestampMs": 9728.1,
+          "processingMs": 291.5,
+          "featureState": "ready",
+          "bufferSize": 1,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 26
+        },
+        {
+          "timestampMs": 10040.3,
+          "processingMs": 358.7000000178814,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 27
+        },
+        {
+          "timestampMs": 10436.4,
+          "processingMs": 129.80000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 28
+        },
+        {
+          "timestampMs": 10575.1,
+          "processingMs": 146,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 29
+        },
+        {
+          "timestampMs": 10741.7,
+          "processingMs": 147.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 30
+        },
+        {
+          "timestampMs": 10908.4,
+          "processingMs": 207.09999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 31
+        },
+        {
+          "timestampMs": 11123.9,
+          "processingMs": 197.80000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 32
+        },
+        {
+          "timestampMs": 11353.2,
+          "processingMs": 264.40000000596046,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 33
+        },
+        {
+          "timestampMs": 11644.5,
+          "processingMs": 197.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 34
+        },
+        {
+          "timestampMs": 11852.8,
+          "processingMs": 156.30000001192093,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 35
+        },
+        {
+          "timestampMs": 12026.5,
+          "processingMs": 236.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 36
+        },
+        {
+          "timestampMs": 12290.3,
+          "processingMs": 120.09999999403954,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 37
+        },
+        {
+          "timestampMs": 12429.3,
+          "processingMs": 110.19999998807907,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 38
+        },
+        {
+          "timestampMs": 12568.1,
+          "processingMs": 132.5,
+          "featureState": "no_hands",
+          "bufferSize": 0,
+          "windows": 0,
+          "emitted": false,
+          "continuity": 39
+        }
+      ]
+    }
+  ]
+}

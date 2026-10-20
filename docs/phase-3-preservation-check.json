@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/AGENTS.md",
+    "sha256": "2ca68cd08465373ff1e0c381e7075d5d3c3cae1fb22b0a680e190fde1cea772c",
+    "unchanged": true
+  },
+  {
+    "path": "docs/13-IMPLEMENTATION-ROADMAP.md",
+    "sha256": "cdeda36948961de1bf58d4fb0c1d0417727a3f33013c9b505b65c7d56e4bbcf3",
+    "unchanged": true
+  },
+  {
+    "path": "docs/11-DATA-CONTRACTS.md",
+    "sha256": "bc61e3d6a5b3268cf6a60006c6a7f90c6d7ca4ecbdad313f0cb326cc33a8073d",
+    "unchanged": true
+  },
+  {
+    "path": "docs/07-PRETRAINED-MODELS.md",
+    "sha256": "aaa7f167dca2bf4a7975a8e3d512c3ee6a787335e5930241ae6ed44a040924ae",
+    "unchanged": true
+  },
+  {
+    "path": "docs/06-MODEL-SELECTION.md",
+    "sha256": "dfc59b11bb731fe8f6371dcfc0f8da26d6c77286fa5a7ab98e7490353b27a09e",
+    "unchanged": true
+  },
+  {
+    "path": "docs/04-END-TO-END-WORKING-FLOW.md",
+    "sha256": "8439c019f1ad563b00089f8a8e9803ed476252e0f553f1a82bfb1952643f756c",
+    "unchanged": true
+  },
+  {
+    "path": "docs/03-UI-UX-DESIGN-FLOW.md",
+    "sha256": "ffc22c7f795fc73c7e0ca7d0d57dac048643589bde8f4456b89be65c157ec856",
+    "unchanged": true
+  },
+  {
+    "path": "docs/02-SYSTEM-ARCHITECTURE.md",
+    "sha256": "b86881f0bd7066263e89cc733172ef730f58cbd495e55074e760ca44170db9ae",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,11 @@
+# Direct runtime and test dependencies. requirements-lock.txt pins the full graph.
+fastapi==0.143.5
+uvicorn==0.54.0
+pydantic==2.14.1
+pytest==9.1.1
+httpx2==2.13.1
+websockets==16.0
+torch==2.14.1
+numpy==2.4.4
+safetensors==0.8.0
+PyYAML==6.0.3

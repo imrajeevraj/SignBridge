@@ -1,0 +1,9 @@
+{
+  "source_sha256": "46c51e5131489b9a1f6fb76e409fddeb275279e682fcf7cc9513ce8d473cec9d",
+  "extractor_sha256": "103b76cc71ca73ca511cdf694812d5839df6bbb7f8158277b351a195c5bae5da",
+  "windows_original": 3,
+  "windows_repeat": 3,
+  "exact_windows_equal": true,
+  "sampling_equal": true,
+  "feature_max_abs_delta": 0.0
+}

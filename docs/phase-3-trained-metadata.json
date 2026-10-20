@@ -1,0 +1,32 @@
+{
+  "model_id": "signbridge-custom-gru",
+  "model_version": "1",
+  "architecture": "custom_gru",
+  "language": "ISL",
+  "feature_schema": "signbridge.custom-gru.v2",
+  "shape": [
+    32,
+    172
+  ],
+  "sampling_hz": 30,
+  "config": {
+    "hidden_size": 128,
+    "num_layers": 2,
+    "dropout": 0.2
+  },
+  "labels": [
+    "Family",
+    "Goodafternoon"
+  ],
+  "labels_sha256": "622c9361e9e45934e5b4275efbdfd4432c8a33cf99d028ab3ca2f22e926a9376",
+  "checkpoint_sha256": "b657712b1c7f5a6ae8107f33e7a74ac535ee100817518494e1495bbfc17ab031",
+  "evaluation_sha256": "1ead5d61318ee39f6d9f0a6a63f2658e5f98186bb11ff7daeeb3824cf6582f14",
+  "dataset_sha256": "d7af42594a48ef8d32f04ad7332277eb8a3144b3de35e9722f988d319f5f5048",
+  "source": "https://huggingface.co/datasets/ISL500/ISL-DATA/tree/bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "license": "Research and academic use only; dataset card; no commercial permission",
+  "purpose": "trained",
+  "neutral_label": null,
+  "confidence_threshold": 0.5,
+  "temperature": 0.5,
+  "calibrated": true
+}

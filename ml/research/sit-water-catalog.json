@@ -1,0 +1,31 @@
+{
+  "purpose": "real_labeled_data",
+  "dataset_id": "ISL500-sit-water",
+  "language": "ISL",
+  "source": "https://huggingface.co/datasets/ISL500/ISL-DATA/tree/bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "license": "Research and academic use only; dataset card; no commercial permission",
+  "labels": [
+    "Sit",
+    "Water"
+  ],
+  "feature_schema": "signbridge.custom-gru.v2",
+  "sampling_hz": 30,
+  "samples": [
+    {
+      "id": "User001-Sit",
+      "label": "Sit",
+      "signer_id": "User001",
+      "duplicate_group": "Videos/User001/Sit.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/Sit.mp4"
+    },
+    {
+      "id": "User001-Water",
+      "label": "Water",
+      "signer_id": "User001",
+      "duplicate_group": "Videos/User001/Water.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/Water.mp4"
+    }
+  ]
+}

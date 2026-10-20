@@ -1,0 +1,23 @@
+{
+  "purpose": "real_labeled_data",
+  "dataset_id": "ISL500-test-extract",
+  "language": "ISL",
+  "source": "https://huggingface.co/datasets/ISL500/ISL-DATA/tree/bf1fc5a65ce5ccccdd25eba01f55558db2ccbf32",
+  "license": "Research and academic use only; dataset card; no commercial permission",
+  "labels": [
+    "Goodmorning"
+  ],
+  "feature_schema": "signbridge.custom-gru.v2",
+  "sampling_hz": 30,
+  "samples": [
+    {
+      "id": "User001-Goodmorning",
+      "label": "Goodmorning",
+      "signer_id": "User001",
+      "duplicate_group": "Videos/User001/Goodmorning__session113__clip030.mp4",
+      "split": "train",
+      "video_path": "../../.cache/phase3-completion/User001-Goodmorning.mp4",
+      "source_sha256": "98bc5adc2bbb74e3ec58eb1172a2555c9efa3e9c079b1e4d36d53012f6a6f36a"
+    }
+  ]
+}

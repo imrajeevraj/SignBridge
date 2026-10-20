@@ -1,0 +1,16 @@
+{
+  "model": "INCLUDE50 LSTM",
+  "language": "ISL",
+  "checkpoint_sha256": "d3f0b4b17c4c5c25caad11ea1cd0707781dafc5c195c4f2b41b23a5f07cfa147",
+  "strict_load": "all keys matched",
+  "parameters": 7136306,
+  "input": [
+    "batch",
+    169,
+    134
+  ],
+  "classes": 50,
+  "labeled_inference_tested": false,
+  "reason": "No matching legacy upper-body Hands+Pose features extracted. Holistic and later Tasks video probes use different extractors.",
+  "upstream_issue": "F.dropout defaults training=True even in eval; no silent correction applied."
+}

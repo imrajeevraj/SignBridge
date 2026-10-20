@@ -1,0 +1,64 @@
+{
+  "probes": [
+    {
+      "purpose": "Real public labeled video, extraction diagnostics only; NOT model recognition",
+      "source": {
+        "record": "https://zenodo.org/records/4010759",
+        "archive": "https://zenodo.org/records/4010759/files/Adjectives_8of8.zip?download=1",
+        "member": "Adjectives/98. sick/MVI_9363.MOV",
+        "source_sha256": "3caffa58f9c019069e7be54c2c667154fb12e24d6083663b016094418af7f0d1",
+        "bytes": 9502368,
+        "license": "CC-BY-4.0",
+        "integrity": "member ZIP CRC verified; full archive not downloaded"
+      },
+      "signer_identity": "UNVERIFIED; not usable for signer-independent training",
+      "result": {
+        "input_clips": 1,
+        "usable_clips": 0,
+        "failures": [
+          {
+            "id": "MVI_9363",
+            "reason": "No complete usable 32-frame window",
+            "frames": 27,
+            "reasons": {
+              "ready": 22,
+              "no_hands": 5
+            }
+          }
+        ],
+        "sampling": "15 Hz video seek; same packaged worker; no padding or interpolation"
+      },
+      "extractor_sha256": "eaa3d57179a7617f10f126ff2f3d8c97874a9a02437fc65588be74f96b525707"
+    },
+    {
+      "purpose": "Real public labeled video, extraction diagnostics only; NOT model recognition",
+      "source": {
+        "record": "https://zenodo.org/records/4010759",
+        "archive": "https://zenodo.org/records/4010759/files/Adjectives_8of8.zip?download=1",
+        "member": "Adjectives/99. healthy/MVI_5175.MOV",
+        "source_sha256": "fb5518a4b3fccb4769b4b6c970439844319d4f6ec5cf40b9e68f2d599f1a3651",
+        "bytes": 21407484,
+        "license": "CC-BY-4.0",
+        "integrity": "member ZIP CRC verified; full archive not downloaded"
+      },
+      "signer_identity": "UNVERIFIED; not usable for signer-independent training",
+      "result": {
+        "input_clips": 1,
+        "usable_clips": 0,
+        "failures": [
+          {
+            "id": "MVI_5175",
+            "reason": "No complete usable 32-frame window",
+            "frames": 57,
+            "reasons": {
+              "ready": 47,
+              "no_hands": 10
+            }
+          }
+        ],
+        "sampling": "15 Hz video seek; same packaged worker; no padding or interpolation"
+      },
+      "extractor_sha256": "eaa3d57179a7617f10f126ff2f3d8c97874a9a02437fc65588be74f96b525707"
+    }
+  ]
+}
