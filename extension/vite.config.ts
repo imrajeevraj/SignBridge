@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => {
   define: { 'import.meta.env.VITE_BACKEND_URL': JSON.stringify(`http://127.0.0.1:${port}`) },
   plugins: [react(), tailwindcss()],
   server: { host: '127.0.0.1', port: 5173, strictPort: true },
+  preview: { allowedHosts: ['signbridge-2mpr.onrender.com'] },
   build: {
     target: 'chrome116',
     outDir: 'dist',
