@@ -8,6 +8,7 @@
     "assets:setup": "node scripts/setup-assets.mjs",
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && node scripts/build.mjs && node scripts/validate-build.mjs",
+    "build:web": "npm run typecheck && node scripts/build-web.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "node scripts/test-e2e.mjs"

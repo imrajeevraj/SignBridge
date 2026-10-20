@@ -13,6 +13,7 @@
     "assets:setup": "npm run assets:setup --workspace extension",
     "dev": "npm run dev --workspace extension",
     "build": "npm run build --workspace extension",
+    "build:web": "npm run build:web --workspace extension",
     "typecheck": "npm run typecheck --workspace extension",
     "test": "npm run test --workspace extension && node --test scripts/extraction-diagnostics.test.mjs",
     "test:e2e": "npm run test:e2e --workspace extension",

@@ -14,8 +14,23 @@ from .inference.security import local_token, permitted_origins
 from .inference.websocket import inference_socket
 
 
+def resolve_model_dir() -> Path | None:
+    raw = os.getenv('SIGNBRIDGE_MODEL_DIR')
+    if not raw:
+        return None
+    path = Path(raw)
+    if path.is_dir():
+        return path
+    repo_root = Path(__file__).resolve().parent.parent.parent
+    candidate = repo_root / raw
+    if candidate.is_dir():
+        return candidate
+    return path
+
+
 def create_app(*, registry: ModelRegistry | None = None, token: str | None = None, origins: set[str] | None = None) -> FastAPI:
-    selected = registry or ModelRegistry(Path(os.environ['SIGNBRIDGE_MODEL_DIR']) if os.getenv('SIGNBRIDGE_MODEL_DIR') else None)
+    model_dir = resolve_model_dir()
+    selected = registry or ModelRegistry(model_dir)
 
     @asynccontextmanager
     async def lifespan(application):
@@ -36,7 +51,6 @@ def create_app(*, registry: ModelRegistry | None = None, token: str | None = Non
         version="0.3.0",
         description="Local opt-in sign inference. No recording or meeting capture.",
         lifespan=lifespan,
-        # FastAPI's default documentation pages load CDN scripts; leave them off.
         docs_url=None,
         redoc_url=None,
     )
@@ -44,11 +58,12 @@ def create_app(*, registry: ModelRegistry | None = None, token: str | None = Non
         CORSMiddleware,
         allow_origins=list(settings.allowed_origins),
         allow_credentials=False,
-        allow_methods=["GET"],
-        allow_headers=["Accept", "Content-Type"],
+        allow_methods=["GET", "OPTIONS"],
+        allow_headers=["Accept", "Content-Type", "Origin"],
     )
     application.add_middleware(
-        TrustedHostMiddleware, allowed_hosts=["127.0.0.1", "localhost"]
+        TrustedHostMiddleware,
+        allowed_hosts=list(settings.trusted_hosts),
     )
 
     @application.get("/health", response_model=HealthResponse)

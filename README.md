@@ -1,5 +1,10 @@
 # SignBridge AI
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/imrajeevraj/SignBridge)
+
+**Live Web Preview:** [https://signbridge-2mpr.onrender.com](https://signbridge-2mpr.onrender.com)  
+**Render Deployment Guide:** [docs/RENDER_DEPLOYMENT.md](docs/RENDER_DEPLOYMENT.md) | **Verification Report:** [docs/RENDER_DEPLOYMENT_VERIFICATION.md](docs/RENDER_DEPLOYMENT_VERIFICATION.md)
+
 A local accessibility prototype with a Chrome MV3 extension, React webcam studio
 and FastAPI backend. **Phase 3 is PARTIAL:** a genuine two-class ISL GRU is now
 trained and verified through the backend. It got 4/4 held-out known clips correct,
@@ -51,7 +56,11 @@ Set-Location 'D:\SignBridge AI'
 npm ci
 npm run assets:setup
 npm run backend:setup
+# Build Chrome MV3 Extension (dist/)
 npm run build
+
+# Build Standalone Web Distribution for Render (dist-web/)
+npm run build:web
 ```
 
 The backend setup script creates `backend/.venv` and installs the complete pinned

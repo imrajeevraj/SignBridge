@@ -8,6 +8,7 @@ extension/public/models/*.task
 extension/public/vendor/mediapipe/wasm/
 extension/public/vision-worker.js
 dist/
+dist-web/
 .venv/
 __pycache__/
 *.py[cod]

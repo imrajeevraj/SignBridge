@@ -29,7 +29,8 @@ export class InferenceClient {
     this.filter = new PredictionFilter(options.threshold, options.consecutive, options.cooldownMs);
     this.hooks.state('Connecting');
     let socket: WebSocket;
-    try { socket = this.makeSocket(BACKEND_URL.replace('http:', 'ws:') + '/ws/infer'); }
+    const wsUrl = BACKEND_URL.replace(/^http:/, 'ws:').replace(/^https:/, 'wss:') + '/ws/infer';
+    try { socket = this.makeSocket(wsUrl); }
     catch { this.fail('Cannot create a local connection.', 'Backend disconnected'); return; }
     this.socket = socket;
     this.timer = setTimeout(() => this.fail('Authentication timed out.'), 6000);

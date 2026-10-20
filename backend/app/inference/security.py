@@ -12,9 +12,14 @@ def permitted_origins() -> set[str]:
         origin = origin.strip()
         if not origin:
             continue
-        if not re.fullmatch(r'chrome-extension://[a-p]{32}', origin):
-            raise ValueError('SIGNBRIDGE_EXTENSION_ORIGINS requires exact Chrome extension origins.')
+        if origin == '*':
+            raise ValueError('SIGNBRIDGE_EXTENSION_ORIGINS cannot contain wildcard origins.')
+        if not re.fullmatch(r'https?://[A-Za-z0-9.-]+(?::\d+)?', origin) and not re.fullmatch(r'chrome-extension://[a-p]{32}', origin):
+            raise ValueError('SIGNBRIDGE_EXTENSION_ORIGINS requires exact origins or exact Chrome extension origins.')
         origins.add(origin)
+    env_origin = os.getenv('PUBLIC_APP_ORIGIN')
+    if env_origin:
+        origins.add(env_origin.rstrip('/'))
     return origins
 
 
