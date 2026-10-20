@@ -3,9 +3,13 @@
   "name": "SignBridge AI",
   "version": "0.3.0",
   "minimum_chrome_version": "116",
-  "description": "Local webcam landmarks and opt-in inference with a validated trained sign model. No meeting capture.",
+  "description": "Local sign-language recognition and real-time meeting captions powered by local MediaPipe and private AI inference.",
   "permissions": [
-    "storage"
+    "storage",
+    "tabCapture",
+    "offscreen",
+    "activeTab",
+    "tabs"
   ],
   "host_permissions": [
     "http://127.0.0.1/*"

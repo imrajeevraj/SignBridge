@@ -4,6 +4,7 @@ import { Header } from '../components/Header';
 import { StatusCard } from '../components/StatusCard';
 import { FeatureCard } from '../components/FeatureCard';
 import { SettingsPanel } from '../components/SettingsPanel';
+import { MeetingModePanel } from '../components/MeetingModePanel';
 import { getBackendStatus, getStatus } from '../communication/client';
 import type { BackendStatus } from '../communication/messages';
 import { isExtension } from '../settings';
@@ -42,7 +43,7 @@ export function Dashboard() {
         <div className="eyebrow"><span className="live-dot" /> BUILT FOR UNDERSTANDING</div>
         <h1>Every gesture.<br /><span>A step toward connection.</span></h1>
         <p>A more accessible meeting starts here. Your foundation for<br className="desktop-break" /> sign-language recognition and live captions.</p>
-        <div className="hero-tags"><span><ShieldCheck size={13} aria-hidden="true" /> Privacy first</span><span className="tag-divider" /><span>Phase 3 <span className="muted">/ Local inference foundation</span></span></div>
+        <div className="hero-tags"><span><ShieldCheck size={13} aria-hidden="true" /> Privacy first</span><span className="tag-divider" /><span>Phase 4 <span className="muted">/ Google Meet live captions</span></span></div>
         <div className="hero-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="gesture-mark"><Hand size={65} strokeWidth={1.1} /></div><span className="art-label">CONNECTION STARTS WITH YOU</span></div>
       </section>
 
@@ -55,6 +56,7 @@ export function Dashboard() {
 
       <div className="workspace-grid">
         <div className="flex flex-col gap-5">
+          <MeetingModePanel />
           <section className="panel webcam-launch"><div className="section-heading"><Camera size={19} className="accent" /><h2>Webcam landmarks are ready to try</h2></div><p>Open the visible studio to start your camera with permission. It tracks hands and pose locally; isolated sign recognition additionally requires a validated trained model. Switching away from the studio stops capture.</p><button className="button primary" onClick={openStudio}>Open webcam studio</button></section>
           <section className="panel recognition-panel" aria-labelledby="recognition-heading">
             <div className="flex items-center justify-between gap-3"><div className="section-heading"><span className="heading-icon"><Fingerprint size={19} aria-hidden="true" /></span><h2 id="recognition-heading">Recognition studio</h2></div><span className="badge">COMING NEXT</span></div>
@@ -85,6 +87,6 @@ export function Dashboard() {
         </div>
       </section>
     </main>
-    <footer><span><span className="footer-dot" />Phase 3 · Model readiness required</span><span>Hackathon prototype <span className="footer-separator">/</span> <Globe2 size={12} aria-hidden="true" /> Privacy-first design</span></footer>
+    <footer><span><span className="footer-dot" />Phase 4 · Google Meet captions ready</span><span>Hackathon prototype <span className="footer-separator">/</span> <Globe2 size={12} aria-hidden="true" /> Privacy-first design</span></footer>
   </div>;
 }

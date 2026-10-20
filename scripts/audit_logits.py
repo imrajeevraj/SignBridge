@@ -30,3 +30,4 @@ for c in unk_clips:
         energy = -torch.logsumexp(logits, dim=-1).mean().item()
         diff = abs(mean_logits[0] - mean_logits[1])
         print(f"{c['split']:10} {c['id']:24} true:{c['label']:14} logits:[{mean_logits[0]:.2f}, {mean_logits[1]:.2f}] diff:{diff:.2f} energy:{energy:.2f}")
+

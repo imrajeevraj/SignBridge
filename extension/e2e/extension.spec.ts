@@ -49,7 +49,7 @@ test('unpacked MV3 extension, real health request, preferences and inert meeting
       const contexts = await chrome.runtime.getContexts({ contextTypes: [chrome.runtime.ContextType.OFFSCREEN_DOCUMENT] });
       return contexts.length;
     })).toBe(0);
-    expect(await page.evaluate(() => chrome.runtime.getManifest().permissions)).toEqual(['storage']);
+    expect(await page.evaluate(() => chrome.runtime.getManifest().permissions)).toEqual(['storage', 'tabCapture', 'offscreen', 'activeTab', 'tabs']);
 
     // A synthetic meeting page tests the real declarative content script without
     // joining a meeting or contacting a meeting provider.

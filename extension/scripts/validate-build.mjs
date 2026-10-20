@@ -17,7 +17,7 @@ async function exists(relative, base = root) {
 }
 assert.equal(manifest.manifest_version, 3);
 assert.equal(manifest.background.type, 'module');
-assert.deepEqual(manifest.permissions, ['storage']);
+assert.deepEqual(manifest.permissions, ['storage', 'tabCapture', 'offscreen', 'activeTab', 'tabs']);
 assert.deepEqual(manifest.host_permissions, ['http://127.0.0.1/*']);
 assert(!manifest.web_accessible_resources, 'Landmarks need no web-page-accessible assets');
 const csp = manifest.content_security_policy.extension_pages;

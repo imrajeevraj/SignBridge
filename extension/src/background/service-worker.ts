@@ -1,6 +1,6 @@
 import { isRecord, type WorkerResponse } from '../communication/messages';
 import { DEFAULT_SETTINGS, SETTINGS_KEY } from '../settings';
-import { handleMessage } from './handlers';
+import { defaultMeetingManager, handleMessage } from './handlers';
 
 chrome.runtime.onInstalled.addListener((details) => {
   void (async () => {
@@ -8,7 +8,7 @@ chrome.runtime.onInstalled.addListener((details) => {
     await chrome.storage.local.setAccessLevel({ accessLevel: 'TRUSTED_CONTEXTS' });
     const saved = await chrome.storage.local.get(SETTINGS_KEY);
     if (saved[SETTINGS_KEY] === undefined) await chrome.storage.local.set({ [SETTINGS_KEY]: DEFAULT_SETTINGS });
-    console.info(`[SignBridge] ${details.reason}: Phase 2 initialized; webcam requires consent in the studio.`);
+    console.info(`[SignBridge] ${details.reason}: Phase 4 initialized with Meeting Mode support.`);
   })().catch((error: unknown) => console.error('[SignBridge] Initialization failed', error));
 });
 
@@ -34,3 +34,16 @@ chrome.runtime.onMessage.addListener((message: unknown, sender, sendResponse: (r
     });
   return true;
 });
+
+// Clean up meeting capture if captured tab is closed or navigated away
+if (typeof chrome !== 'undefined' && chrome.tabs?.onRemoved) {
+  chrome.tabs.onRemoved.addListener((tabId) => {
+    defaultMeetingManager.onTabRemoved(tabId);
+  });
+}
+
+if (typeof chrome !== 'undefined' && chrome.tabs?.onUpdated) {
+  chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
+    defaultMeetingManager.onTabUpdated(tabId, changeInfo);
+  });
+}
