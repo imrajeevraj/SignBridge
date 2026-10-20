@@ -1,16 +1,15 @@
-# SignBridge AI — Render Deployment Blueprint
-# Specification: https://render.com/docs/blueprint-spec
+# SignBridge AI — Render deployment Blueprint
+# https://render.com/docs/blueprint-spec
+# Validate locally: render blueprints validate render.yaml
 
 services:
-  # ---------------------------------------------------------------------------
-  # Service 1: Static Web Frontend (Production Dashboard & Studio)
-  # ---------------------------------------------------------------------------
-  - type: static
+  # Standalone web dashboard and webcam studio (Static Site)
+  - type: web
     name: signbridge-web
-    plan: free
+    runtime: static
+    autoDeployTrigger: commit
     buildCommand: npm ci && npm run assets:setup && npm run build:web
     staticPublishPath: ./extension/dist-web
-    pullRequestPreviewsEnabled: false
     routes:
       - type: rewrite
         source: /webcam
@@ -35,20 +34,20 @@ services:
         name: Cache-Control
         value: public, max-age=31536000, immutable
     envVars:
+      - key: NODE_VERSION
+        value: 20.20.0
       - key: VITE_BACKEND_URL
         value: https://signbridge-api.onrender.com
 
-  # ---------------------------------------------------------------------------
-  # Service 2: FastAPI ML Inference Backend
-  # ---------------------------------------------------------------------------
+  # FastAPI inference backend (Web Service)
   - type: web
     name: signbridge-api
-    env: python
+    runtime: python
     plan: free
-    buildCommand: pip install -r backend/requirements.txt
+    autoDeployTrigger: commit
+    buildCommand: pip install -r backend/requirements-lock.txt
     startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
-    autoDeploy: false
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
@@ -57,9 +56,8 @@ services:
       - key: SIGNBRIDGE_ALLOWED_ORIGINS
         value: https://signbridge-web.onrender.com,https://signbridge-2mpr.onrender.com
       - key: SIGNBRIDGE_TRUSTED_HOSTS
-        value: signbridge-api.onrender.com,*.onrender.com
+        value: signbridge-api.onrender.com
       - key: PUBLIC_APP_ORIGIN
         value: https://signbridge-web.onrender.com
-      - key: SIGNBRIDGE_MODEL_DIR
-        value: ml/runs/isl500-v2-remediated
-
+      # Set SIGNBRIDGE_MODEL_DIR only after a validated model artifact
+      # is provisioned into the deployed service's filesystem.
