@@ -37,7 +37,7 @@ services:
       - key: NODE_VERSION
         value: 20.20.0
       - key: VITE_BACKEND_URL
-        value: https://signbridge-api.onrender.com
+        value: https://signbridge-api-mjbw.onrender.com
 
   # FastAPI inference backend (Web Service)
   - type: web
@@ -56,7 +56,7 @@ services:
       - key: SIGNBRIDGE_ALLOWED_ORIGINS
         value: https://signbridge-web.onrender.com,https://signbridge-2mpr.onrender.com
       - key: SIGNBRIDGE_TRUSTED_HOSTS
-        value: signbridge-api.onrender.com
+        value: signbridge-api-mjbw.onrender.com
       - key: PUBLIC_APP_ORIGIN
         value: https://signbridge-web.onrender.com
       # Set SIGNBRIDGE_MODEL_DIR only after a validated model artifact
